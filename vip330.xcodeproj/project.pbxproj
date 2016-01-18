@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
-		BCE2DE171C4D6A6200E430F3 /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE161C4D6A6200E430F3 /* LoginFormViewController.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
 		BCE2DE1C1C4D6A6200E430F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE1B1C4D6A6200E430F3 /* Assets.xcassets */; };
 		BCE2DE1F1C4D6A6200E430F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE1D1C4D6A6200E430F3 /* LaunchScreen.storyboard */; };
-		BCE2DE271C4D6C0D00E430F3 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE261C4D6C0D00E430F3 /* RegistrationFormViewController.swift */; };
+		BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */; };
+		BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCE2DE161C4D6A6200E430F3 /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 		BCE2DE191C4D6A6200E430F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCE2DE1B1C4D6A6200E430F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE2DE1E1C4D6A6200E430F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCE2DE201C4D6A6200E430F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCE2DE261C4D6C0D00E430F3 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
+		BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
+		BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,30 @@
 			isa = PBXGroup;
 			children = (
 				BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */,
-				BCE2DE161C4D6A6200E430F3 /* LoginFormViewController.swift */,
-				BCE2DE261C4D6C0D00E430F3 /* RegistrationFormViewController.swift */,
+				BCE2DE281C4D70C900E430F3 /* Networking */,
+				BCE2DE291C4D70C900E430F3 /* ViewControllers */,
 				BCE2DE181C4D6A6200E430F3 /* Main.storyboard */,
 				BCE2DE1B1C4D6A6200E430F3 /* Assets.xcassets */,
 				BCE2DE1D1C4D6A6200E430F3 /* LaunchScreen.storyboard */,
 				BCE2DE201C4D6A6200E430F3 /* Info.plist */,
 			);
 			path = vip330;
+			sourceTree = "<group>";
+		};
+		BCE2DE281C4D70C900E430F3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BCE2DE291C4D70C900E430F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */,
+				BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCE2DE171C4D6A6200E430F3 /* LoginFormViewController.swift in Sources */,
-				BCE2DE271C4D6C0D00E430F3 /* RegistrationFormViewController.swift in Sources */,
+				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
+				BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */,
 				BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
