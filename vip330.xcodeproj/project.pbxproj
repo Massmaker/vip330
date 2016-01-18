@@ -17,6 +17,10 @@
 		BCE2DE311C4D783900E430F3 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */; };
 		BCE2DE331C4D785700E430F3 /* UserDefaultsManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE321C4D785700E430F3 /* UserDefaultsManagement.swift */; };
 		BCE2DE351C4D7BB200E430F3 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE341C4D7BB200E430F3 /* UserDefaultsKeys.swift */; };
+		BCE2DE371C4D7E5D00E430F3 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */; };
+		BCE2DE391C4D7EEF00E430F3 /* AuthenticationManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE381C4D7EEF00E430F3 /* AuthenticationManagement.swift */; };
+		BCE2DE3B1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE3A1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift */; };
+		BCE2DE3D1C4D7F9900E430F3 /* CredentialsCheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE3C1C4D7F9900E430F3 /* CredentialsCheckResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		BCE2DE321C4D785700E430F3 /* UserDefaultsManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagement.swift; sourceTree = "<group>"; };
 		BCE2DE341C4D7BB200E430F3 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		BCE2DE381C4D7EEF00E430F3 /* AuthenticationManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManagement.swift; sourceTree = "<group>"; };
+		BCE2DE3A1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerDelegate.swift; sourceTree = "<group>"; };
+		BCE2DE3C1C4D7F9900E430F3 /* CredentialsCheckResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsCheckResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		BCE2DE291C4D70C900E430F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */,
 				BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */,
 				BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */,
 			);
@@ -111,6 +120,9 @@
 				BCE2DE321C4D785700E430F3 /* UserDefaultsManagement.swift */,
 				BCE2DE341C4D7BB200E430F3 /* UserDefaultsKeys.swift */,
 				BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */,
+				BCE2DE381C4D7EEF00E430F3 /* AuthenticationManagement.swift */,
+				BCE2DE3A1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift */,
+				BCE2DE3C1C4D7F9900E430F3 /* CredentialsCheckResult.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -250,8 +262,12 @@
 				BCE2DE311C4D783900E430F3 /* DefaultsManager.swift in Sources */,
 				BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */,
 				BCE2DE331C4D785700E430F3 /* UserDefaultsManagement.swift in Sources */,
+				BCE2DE3D1C4D7F9900E430F3 /* CredentialsCheckResult.swift in Sources */,
 				BCE2DE351C4D7BB200E430F3 /* UserDefaultsKeys.swift in Sources */,
+				BCE2DE3B1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift in Sources */,
 				BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */,
+				BCE2DE391C4D7EEF00E430F3 /* AuthenticationManagement.swift in Sources */,
+				BCE2DE371C4D7E5D00E430F3 /* LaunchScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
