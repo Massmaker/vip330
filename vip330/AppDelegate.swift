@@ -13,9 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var currentUserID = ""
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        NSUserDefaults.standardUserDefaults().setObject("tsetEmail@server.com", forKey: "Email")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
         return true
     }
 

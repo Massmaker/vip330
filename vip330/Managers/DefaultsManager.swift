@@ -23,7 +23,7 @@ class DefaultsManager:UserDefaultsManagement {
         defaults.setObject(email, forKey: UserDefaultsKeys.Email.rawValue)
     }
     
-    func getPasswordFromDefault() -> String? {
+    func getPasswordFromDefaults() -> String? {
         return defaults.objectForKey(UserDefaultsKeys.Password.rawValue) as? String
     }
     

@@ -12,7 +12,7 @@ protocol UserDefaultsManagement
 {
     func getEmailFromDefaults() -> String?
     func setEmailToDefaults(email:String?)
-    func getPasswordFromDefault() -> String?
+    func getPasswordFromDefaults() -> String?
     func setPasswordToDefaults(password:String?)
     func setUserIDToDefaults(userId:String?)
     func getUserIdFromDefaults() -> String?

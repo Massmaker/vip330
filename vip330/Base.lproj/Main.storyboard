@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1126" y="507"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--LoginNavigationController-->
         <scene sceneID="MHp-sw-Whd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZIP-S2-sbO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" title="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ZIP-S2-sbO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yWC-Ec-K8c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

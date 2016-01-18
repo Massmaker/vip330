@@ -10,6 +10,7 @@ import Foundation
 enum CredentialsCheckResult
 {
     case AllCredentials(email:String, password:String, userID:String)
-    case NoneCredentials
+    case NoCredentials
     case EmailOnly(email:String)
+    case EmailAndPassword(email:String, password:String)
 }

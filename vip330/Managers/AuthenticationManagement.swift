@@ -10,5 +10,7 @@ import Foundation
 protocol AuthenticationManagement {
     var delegate:AuthenticationManagerDelegate?{get set}
     func startCredentialsChecking()
+    func loginWithParameters(email:String, password:String)
+    func registerWithParameters(email:String, password:String)
     
 }
