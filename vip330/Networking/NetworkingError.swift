@@ -1,5 +1,5 @@
 //
-//  NetworkingErrors.swift
+//  NetworkingError.swift
 //  vip330
 //
 //  Created by Ivan Yavorin on 1/18/16.
@@ -7,8 +7,7 @@
 //
 
 import Foundation
-
-enum NetworkingError:ErrorType {
-    case Success(response:AnyObject?)
+enum NetworkingError:ErrorType{
     case Failure(code:Int, message:String?)
+    case Unknown(message:String?)
 }

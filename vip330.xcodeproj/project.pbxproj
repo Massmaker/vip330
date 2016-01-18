@@ -10,7 +10,10 @@
 		0F0768E063B9C0D67D9A853B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53BBC97D6E42B0BD4F27FC4 /* Pods.framework */; };
 		BC75697F1C4D87B500C56414 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75697E1C4D87B500C56414 /* HelperFunctions.swift */; };
 		BC7569811C4D887C00C56414 /* NetworkApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569801C4D887C00C56414 /* NetworkApiCaller.swift */; };
-		BC7569831C4D89A500C56414 /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569821C4D89A500C56414 /* NetworkingErrors.swift */; };
+		BC7569831C4D89A500C56414 /* NetworkingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569821C4D89A500C56414 /* NetworkingResponse.swift */; };
+		BC7569851C4D8FCC00C56414 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569841C4D8FCC00C56414 /* NetworkingError.swift */; };
+		BC7569871C4D918C00C56414 /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569861C4D918C00C56414 /* ApiCalls.swift */; };
+		BC7569891C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569881C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift */; };
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
 		BCE2DE1C1C4D6A6200E430F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE1B1C4D6A6200E430F3 /* Assets.xcassets */; };
@@ -34,7 +37,10 @@
 		B53BBC97D6E42B0BD4F27FC4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC75697E1C4D87B500C56414 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		BC7569801C4D887C00C56414 /* NetworkApiCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkApiCaller.swift; sourceTree = "<group>"; };
-		BC7569821C4D89A500C56414 /* NetworkingErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
+		BC7569821C4D89A500C56414 /* NetworkingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingResponse.swift; sourceTree = "<group>"; };
+		BC7569841C4D8FCC00C56414 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		BC7569861C4D918C00C56414 /* ApiCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCalls.swift; sourceTree = "<group>"; };
+		BC7569881C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginFormViewController+AuthenticationManagerDelegate.swift"; sourceTree = "<group>"; };
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE2DE191C4D6A6200E430F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				BC7569801C4D887C00C56414 /* NetworkApiCaller.swift */,
-				BC7569821C4D89A500C56414 /* NetworkingErrors.swift */,
+				BC7569861C4D918C00C56414 /* ApiCalls.swift */,
+				BC7569821C4D89A500C56414 /* NetworkingResponse.swift */,
+				BC7569841C4D8FCC00C56414 /* NetworkingError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 				BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */,
 				BCE2DE401C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift */,
 				BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */,
+				BC7569881C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift */,
 				BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */,
 			);
 			path = ViewControllers;
@@ -273,12 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7569871C4D918C00C56414 /* ApiCalls.swift in Sources */,
 				BCE2DE411C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift in Sources */,
 				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
+				BC7569891C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift in Sources */,
+				BC7569851C4D8FCC00C56414 /* NetworkingError.swift in Sources */,
 				BCE2DE311C4D783900E430F3 /* DefaultsManager.swift in Sources */,
 				BCE2DE3F1C4D808100E430F3 /* AuthenticationManager.swift in Sources */,
 				BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */,
-				BC7569831C4D89A500C56414 /* NetworkingErrors.swift in Sources */,
+				BC7569831C4D89A500C56414 /* NetworkingResponse.swift in Sources */,
 				BCE2DE331C4D785700E430F3 /* UserDefaultsManagement.swift in Sources */,
 				BCE2DE3D1C4D7F9900E430F3 /* CredentialsCheckResult.swift in Sources */,
 				BC75697F1C4D87B500C56414 /* HelperFunctions.swift in Sources */,

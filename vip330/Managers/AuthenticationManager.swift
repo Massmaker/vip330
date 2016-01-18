@@ -10,6 +10,8 @@ import Foundation
 class AuthenticationManager:AuthenticationManagement{
     
     private lazy var defaultsHandler = DefaultsManager()
+    private lazy var networkHandler = NetworkApiCaller()
+    
     //MARK: - AuthenticationManagement conformance
     weak var delegate:AuthenticationManagerDelegate?
     func startCredentialsChecking() {
@@ -48,6 +50,9 @@ class AuthenticationManager:AuthenticationManagement{
     {
         self.delegate?.authenticationProcessDidStart()
         //network handler login with params
+        networkHandler.performLogin([email, password]) { (response) in
+            
+        }
     }
     
     func registerWithParameters(email:String, password:String)

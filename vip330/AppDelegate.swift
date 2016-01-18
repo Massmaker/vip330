@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        NSUserDefaults.standardUserDefaults().setObject("tsetEmail@server.com", forKey: "Email")
+        NSUserDefaults.standardUserDefaults().setObject("yavorin@ukr.net", forKey: "Email")
         NSUserDefaults.standardUserDefaults().synchronize()
         
         return true

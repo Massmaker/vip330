@@ -15,6 +15,8 @@ class LoginFormViewController: FormViewController {
     
     var userPassword:String?
     
+    lazy var authmanager = AuthenticationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,10 +53,11 @@ class LoginFormViewController: FormViewController {
     
     private func startLogin()
     {
-        
+        authmanager.delegate = self
+        authmanager.loginWithParameters(userEmail!, password: userPassword!)
     }
     
-    private func checkLoginButtonEnabled()
+    func checkLoginButtonEnabled()
     {
         guard
             let email = self.userEmail where !email.characters.isEmpty,
