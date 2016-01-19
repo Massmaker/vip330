@@ -23,6 +23,7 @@
 		BC7A9B151C4ED7AE00938EAA /* UserDefaultsManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B121C4ED7AE00938EAA /* UserDefaultsManagement.swift */; };
 		BC7A9B191C4ED82E00938EAA /* CredentialsCheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B171C4ED82E00938EAA /* CredentialsCheckResult.swift */; };
 		BC7A9B1A1C4ED82E00938EAA /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B181C4ED82E00938EAA /* UserDefaultsKeys.swift */; };
+		BC7A9B1C1C4ED88100938EAA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */; };
 		BC9902451C4ECDE000EA2316 /* UserRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */; };
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		BC7A9B121C4ED7AE00938EAA /* UserDefaultsManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagement.swift; sourceTree = "<group>"; };
 		BC7A9B171C4ED82E00938EAA /* CredentialsCheckResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsCheckResult.swift; sourceTree = "<group>"; };
 		BC7A9B181C4ED82E00938EAA /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationData.swift; sourceTree = "<group>"; };
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */,
 				BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */,
+				BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
 				BC7A9B0E1C4ED75200938EAA /* LocationManagerDelegate.swift in Sources */,
 				BC7A9B0D1C4ED75200938EAA /* LocationManagement.swift in Sources */,
+				BC7A9B1C1C4ED88100938EAA /* LocationManager.swift in Sources */,
 				BC7A9B151C4ED7AE00938EAA /* UserDefaultsManagement.swift in Sources */,
 				BC7A9B191C4ED82E00938EAA /* CredentialsCheckResult.swift in Sources */,
 				BC7569891C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift in Sources */,

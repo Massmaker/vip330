@@ -11,6 +11,8 @@ import MapKit
 protocol LocationManagement {
     var delegate:LocationManagerDelegate?{get set}
     func checkPermissions()
+    func checkLocationServicesEnabled() -> Bool
     func askForLocationUsage()
     func detectUserLocation()
+    func stopMonitoringUserLocationn()
 }

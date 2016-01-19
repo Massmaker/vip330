@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-protocol LocationManagerDelegate {
+protocol LocationManagerDelegate : class {
     func locationManagerPermissionsStatus(status:CLAuthorizationStatus)
     func loactionManagerDidFinishRequestingPermissions(status:CLAuthorizationStatus)
     func locationManagerDidStartRequestingUserLocation()
