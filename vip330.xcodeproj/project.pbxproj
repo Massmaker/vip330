@@ -14,6 +14,10 @@
 		BC7569851C4D8FCC00C56414 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569841C4D8FCC00C56414 /* NetworkingError.swift */; };
 		BC7569871C4D918C00C56414 /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569861C4D918C00C56414 /* ApiCalls.swift */; };
 		BC7569891C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569881C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift */; };
+		BC7A9AFE1C4ED36B00938EAA /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9AFD1C4ED36B00938EAA /* MainMapViewController.swift */; };
+		BC7A9B001C4ED39400938EAA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A9AFF1C4ED39400938EAA /* MapKit.framework */; };
+		BC7A9B0D1C4ED75200938EAA /* LocationManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B081C4ED75200938EAA /* LocationManagement.swift */; };
+		BC7A9B0E1C4ED75200938EAA /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B091C4ED75200938EAA /* LocationManagerDelegate.swift */; };
 		BC9902451C4ECDE000EA2316 /* UserRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */; };
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
@@ -22,11 +26,8 @@
 		BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */; };
 		BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */; };
 		BCE2DE311C4D783900E430F3 /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */; };
-		BCE2DE331C4D785700E430F3 /* UserDefaultsManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE321C4D785700E430F3 /* UserDefaultsManagement.swift */; };
 		BCE2DE351C4D7BB200E430F3 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE341C4D7BB200E430F3 /* UserDefaultsKeys.swift */; };
 		BCE2DE371C4D7E5D00E430F3 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */; };
-		BCE2DE391C4D7EEF00E430F3 /* AuthenticationManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE381C4D7EEF00E430F3 /* AuthenticationManagement.swift */; };
-		BCE2DE3B1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE3A1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift */; };
 		BCE2DE3D1C4D7F9900E430F3 /* CredentialsCheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE3C1C4D7F9900E430F3 /* CredentialsCheckResult.swift */; };
 		BCE2DE3F1C4D808100E430F3 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */; };
 		BCE2DE411C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE401C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift */; };
@@ -42,6 +43,10 @@
 		BC7569841C4D8FCC00C56414 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		BC7569861C4D918C00C56414 /* ApiCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCalls.swift; sourceTree = "<group>"; };
 		BC7569881C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginFormViewController+AuthenticationManagerDelegate.swift"; sourceTree = "<group>"; };
+		BC7A9AFD1C4ED36B00938EAA /* MainMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
+		BC7A9AFF1C4ED39400938EAA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BC7A9B081C4ED75200938EAA /* LocationManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagement.swift; sourceTree = "<group>"; };
+		BC7A9B091C4ED75200938EAA /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
 		BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationData.swift; sourceTree = "<group>"; };
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,11 +57,8 @@
 		BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 		BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
 		BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
-		BCE2DE321C4D785700E430F3 /* UserDefaultsManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagement.swift; sourceTree = "<group>"; };
 		BCE2DE341C4D7BB200E430F3 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
-		BCE2DE381C4D7EEF00E430F3 /* AuthenticationManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManagement.swift; sourceTree = "<group>"; };
-		BCE2DE3A1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerDelegate.swift; sourceTree = "<group>"; };
 		BCE2DE3C1C4D7F9900E430F3 /* CredentialsCheckResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsCheckResult.swift; sourceTree = "<group>"; };
 		BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		BCE2DE401C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LaunchScreenViewController+AuthenticationManagerDelegate.swift"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7A9B001C4ED39400938EAA /* MapKit.framework in Frameworks */,
 				0F0768E063B9C0D67D9A853B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,9 +80,19 @@
 		863D0396B1D75C1FEF7DE2DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC7A9AFF1C4ED39400938EAA /* MapKit.framework */,
 				B53BBC97D6E42B0BD4F27FC4 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC7A9B051C4ED70F00938EAA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A9B081C4ED75200938EAA /* LocationManagement.swift */,
+				BC7A9B091C4ED75200938EAA /* LocationManagerDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		BC9902431C4ECDC900EA2316 /* CustomObjects */ = {
@@ -113,6 +126,7 @@
 			children = (
 				BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */,
 				BC75697E1C4D87B500C56414 /* HelperFunctions.swift */,
+				BC7A9B051C4ED70F00938EAA /* Protocols */,
 				BC9902431C4ECDC900EA2316 /* CustomObjects */,
 				BCE2DE2F1C4D781F00E430F3 /* Managers */,
 				BCE2DE281C4D70C900E430F3 /* Networking */,
@@ -144,6 +158,7 @@
 				BCE2DE2A1C4D70E800E430F3 /* LoginFormViewController.swift */,
 				BC7569881C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift */,
 				BCE2DE2B1C4D70E800E430F3 /* RegistrationFormViewController.swift */,
+				BC7A9AFD1C4ED36B00938EAA /* MainMapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -151,11 +166,8 @@
 		BCE2DE2F1C4D781F00E430F3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				BCE2DE321C4D785700E430F3 /* UserDefaultsManagement.swift */,
 				BCE2DE341C4D7BB200E430F3 /* UserDefaultsKeys.swift */,
 				BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */,
-				BCE2DE381C4D7EEF00E430F3 /* AuthenticationManagement.swift */,
-				BCE2DE3A1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift */,
 				BCE2DE3C1C4D7F9900E430F3 /* CredentialsCheckResult.swift */,
 				BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */,
 			);
@@ -206,6 +218,11 @@
 				TargetAttributes = {
 					BCE2DE101C4D6A6200E430F3 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -296,20 +313,20 @@
 				BC7569871C4D918C00C56414 /* ApiCalls.swift in Sources */,
 				BCE2DE411C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift in Sources */,
 				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
+				BC7A9B0E1C4ED75200938EAA /* LocationManagerDelegate.swift in Sources */,
+				BC7A9B0D1C4ED75200938EAA /* LocationManagement.swift in Sources */,
 				BC7569891C4DA16E00C56414 /* LoginFormViewController+AuthenticationManagerDelegate.swift in Sources */,
+				BC7A9AFE1C4ED36B00938EAA /* MainMapViewController.swift in Sources */,
 				BC7569851C4D8FCC00C56414 /* NetworkingError.swift in Sources */,
 				BCE2DE311C4D783900E430F3 /* DefaultsManager.swift in Sources */,
 				BCE2DE3F1C4D808100E430F3 /* AuthenticationManager.swift in Sources */,
 				BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */,
 				BC7569831C4D89A500C56414 /* NetworkingResponse.swift in Sources */,
-				BCE2DE331C4D785700E430F3 /* UserDefaultsManagement.swift in Sources */,
 				BCE2DE3D1C4D7F9900E430F3 /* CredentialsCheckResult.swift in Sources */,
 				BC75697F1C4D87B500C56414 /* HelperFunctions.swift in Sources */,
 				BC7569811C4D887C00C56414 /* NetworkApiCaller.swift in Sources */,
 				BCE2DE351C4D7BB200E430F3 /* UserDefaultsKeys.swift in Sources */,
-				BCE2DE3B1C4D7F0A00E430F3 /* AuthenticationManagerDelegate.swift in Sources */,
 				BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */,
-				BCE2DE391C4D7EEF00E430F3 /* AuthenticationManagement.swift in Sources */,
 				BC9902451C4ECDE000EA2316 /* UserRegistrationData.swift in Sources */,
 				BCE2DE371C4D7E5D00E430F3 /* LaunchScreenViewController.swift in Sources */,
 			);
