@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AEXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFA42C31B7C1AE2FB855FBF025333B29</key>
+		<key>6B9813D7E7E5E2BAC2903B82EC58E643</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F44B0483BCFF865FC53B507FEC645CBD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

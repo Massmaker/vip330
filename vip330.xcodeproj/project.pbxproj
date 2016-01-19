@@ -24,6 +24,7 @@
 		BC7A9B191C4ED82E00938EAA /* CredentialsCheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B171C4ED82E00938EAA /* CredentialsCheckResult.swift */; };
 		BC7A9B1A1C4ED82E00938EAA /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B181C4ED82E00938EAA /* UserDefaultsKeys.swift */; };
 		BC7A9B1C1C4ED88100938EAA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */; };
+		BC7A9B1E1C4EE0C900938EAA /* NetworkResponseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B1D1C4EE0C900938EAA /* NetworkResponseConverter.swift */; };
 		BC9902451C4ECDE000EA2316 /* UserRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */; };
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		BC7A9B171C4ED82E00938EAA /* CredentialsCheckResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsCheckResult.swift; sourceTree = "<group>"; };
 		BC7A9B181C4ED82E00938EAA /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BC7A9B1D1C4EE0C900938EAA /* NetworkResponseConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseConverter.swift; sourceTree = "<group>"; };
 		BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationData.swift; sourceTree = "<group>"; };
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				BC7569801C4D887C00C56414 /* NetworkApiCaller.swift */,
 				BC7569861C4D918C00C56414 /* ApiCalls.swift */,
+				BC7A9B1D1C4EE0C900938EAA /* NetworkResponseConverter.swift */,
 				BC7569821C4D89A500C56414 /* NetworkingResponse.swift */,
 				BC7569841C4D8FCC00C56414 /* NetworkingError.swift */,
 			);
@@ -332,6 +335,7 @@
 			files = (
 				BC7569871C4D918C00C56414 /* ApiCalls.swift in Sources */,
 				BCE2DE411C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift in Sources */,
+				BC7A9B1E1C4EE0C900938EAA /* NetworkResponseConverter.swift in Sources */,
 				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
 				BC7A9B0E1C4ED75200938EAA /* LocationManagerDelegate.swift in Sources */,
 				BC7A9B0D1C4ED75200938EAA /* LocationManagement.swift in Sources */,

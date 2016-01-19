@@ -89,54 +89,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "vip330/Managers/AuthenticationManager.swift"
-            timestampString = "474845252.001833"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "loginWithParameters(_:password:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "vip330.AuthenticationManager.loginWithParameters (vip330.AuthenticationManager)(Swift.String, password : Swift.String) -&gt; ()"
-                  moduleName = "vip330"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/Managers/AuthenticationManager.swift"
-                  timestampString = "474850675.763223"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "358">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "vip330.AuthenticationManager.(loginWithParameters (vip330.AuthenticationManager) -&gt; (Swift.String, password : Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "vip330"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/Managers/AuthenticationManager.swift"
-                  timestampString = "474850675.76353"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/LoginFormViewController.swift"
             timestampString = "474849809.365067"
             startingColumnNumber = "9223372036854775807"
