@@ -60,15 +60,26 @@ class LocationManager: NSObject , LocationManagement {
 
 extension LocationManager:CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        self.delegate?.locationManagerPermissionsStatus(status)
+        self.delegate?.locationManagerDidFinishRequestingPermissions(status)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        if locations.isEmpty
+        {
+            print("updated no locations")
+        }
+        else
+        {
+            print("locations:")
+            for aLoc in locations
+            {
+                print(aLoc.description)
+            }
+        }
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        
+        print("location error: \(error.description)")
     }
     
 }

@@ -18,3 +18,8 @@ func anAppDelegate() -> AppDelegate?
     
     return delegate
 }
+
+func dispatchAsyncMain(block:dispatch_block_t)
+{
+    dispatch_async(dispatch_get_main_queue(),block)
+}

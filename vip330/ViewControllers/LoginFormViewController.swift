@@ -74,5 +74,18 @@ class LoginFormViewController: FormViewController {
             return
         }
     }
+    
+    func showMapViewController()
+    {
+        guard let mapVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainMapViewController") as? MainMapViewController else
+        {
+            return
+        }
+        
+        let navHolder = UINavigationController(rootViewController: mapVC)
+        
+        anAppDelegate()?.window?.rootViewController = navHolder
+        
+    }
 }
 

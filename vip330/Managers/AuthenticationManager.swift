@@ -50,7 +50,17 @@ class AuthenticationManager:AuthenticationManagement{
     {
         self.delegate?.authenticationProcessDidStart()
         //network handler login with params
-        networkHandler.performLogin([email, password]) { (response) in
+        networkHandler.performLogin([email, password]) {[weak self] (response) in
+            switch response
+            {
+            case .Success(let response):
+                if let dict = response as? [String:String], userIdRecieved = dict["userId"]
+                {
+                    self?.delegate?.loginProcessDidFinishWithresult("\(userIdRecieved)", error: nil)
+                }
+            case .Failure(let error):
+                self?.delegate?.loginProcessDidFinishWithresult("", error: error)
+            }
             
         }
     }

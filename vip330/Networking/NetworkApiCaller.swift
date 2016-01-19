@@ -11,7 +11,10 @@ import Alamofire
 
 class NetworkApiCaller{
     let baseAdress = "http://vip330.com"
+    
     private var manager: Alamofire.Manager
+    
+    private lazy var responseParser = NetworkXMLResponseConverter()
     
     init(){
         let serverTrustPolicies: Dictionary<String, ServerTrustPolicy> = ["baseAdress": .DisableEvaluation]
@@ -25,12 +28,18 @@ class NetworkApiCaller{
     func performLogin(parameters:[String], completion:((response:NetworkingResponse)->()))
     {
         let request = getRequest(ApiCalls.Login(email: parameters.first!, password: parameters.last!))
-        manager.request(request).responseData { (responseWithData) -> Void in
+        manager.request(request).responseData {(responseWithData) -> Void in
             if let data = responseWithData.data
             {
-                let aString = String(data: data, encoding: NSUTF8StringEncoding)
-                print(" Recieved response: \n")
-                print(aString)
+                let bgQueue = dispatch_queue_create("LoginResponseParsingQueue", DISPATCH_QUEUE_SERIAL)
+                dispatch_async(bgQueue){
+                    let parsedResponse = NetworkXMLResponseConverter.parseLoginResponse(data)
+                    
+                    dispatchAsyncMain(){
+                        completion(response: parsedResponse)
+                    }
+                }
+                
             }
         }
     }

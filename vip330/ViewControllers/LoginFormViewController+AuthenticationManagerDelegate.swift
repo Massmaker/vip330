@@ -18,6 +18,14 @@ extension LoginFormViewController:AuthenticationManagerDelegate {
     
     func loginProcessDidFinishWithresult(userId: String, error: NetworkingError?) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        anAppDelegate()?.currentUserID = userId
+        guard let anError = error else
+        {
+            self.showMapViewController()
+            return
+        }
+        //TODO: handle errors
+        print("AuthenticationManagerDelegate:   error login: \n \(anError)")
     }
     
     func registrationProcessDidFinishWithResult(userId: String?, error: NetworkingError?) {

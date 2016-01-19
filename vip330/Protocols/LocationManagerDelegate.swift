@@ -11,7 +11,7 @@ import MapKit
 
 protocol LocationManagerDelegate : class {
     func locationManagerPermissionsStatus(status:CLAuthorizationStatus)
-    func loactionManagerDidFinishRequestingPermissions(status:CLAuthorizationStatus)
+    func locationManagerDidFinishRequestingPermissions(status:CLAuthorizationStatus)
     func locationManagerDidStartRequestingUserLocation()
     func locationManagerUserLocationDidChange(location:CLLocation)
     func locationManagerDidFinishRequestingUserLocation()
