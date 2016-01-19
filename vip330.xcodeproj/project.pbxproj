@@ -104,6 +104,13 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		BC7A9B161C4ED7EB00938EAA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		BC9902431C4ECDC900EA2316 /* CustomObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +142,7 @@
 			children = (
 				BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */,
 				BC75697E1C4D87B500C56414 /* HelperFunctions.swift */,
+				BC7A9B161C4ED7EB00938EAA /* Enums */,
 				BC7A9B051C4ED70F00938EAA /* Protocols */,
 				BC9902431C4ECDC900EA2316 /* CustomObjects */,
 				BCE2DE2F1C4D781F00E430F3 /* Managers */,
