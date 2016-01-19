@@ -12,7 +12,14 @@ import MapKit
 class LocationManager: NSObject , LocationManagement {
     
     weak var delegate:LocationManagerDelegate?
-    let locationManager:CLLocationManager
+    private var updatingLocation:Bool = false
+
+    var isUpdatingLocation:Bool{
+        return self.updatingLocation
+    }
+    
+    private let locationManager:CLLocationManager
+    
     override init()
     {
         self.locationManager = CLLocationManager()
@@ -44,16 +51,24 @@ class LocationManager: NSObject , LocationManagement {
             self.delegate?.locationManagerUserLocationDidChange(lastKnownLocation)
         }
         
+        if self.updatingLocation{
+            return
+        }
+        
+        self.updatingLocation = true
         
         self.delegate?.locationManagerDidStartRequestingUserLocation()
         
-        locationManager.distanceFilter = CLLocationDistance(10.0)
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = CLLocationDistance(50.0)
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+       
         locationManager.startUpdatingLocation()
+        
     }
     
     func stopMonitoringUserLocationn() {
         locationManager.stopUpdatingLocation()
+        self.updatingLocation = false
         self.delegate?.locationManagerDidFinishRequestingUserLocation()
     }
 }
@@ -75,11 +90,26 @@ extension LocationManager:CLLocationManagerDelegate {
             {
                 print(aLoc.description)
             }
+            
+            self.delegate?.locationManagerUserLocationDidChange(locations.first!)
         }
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("location error: \(error.description)")
+        print("location error: \(error.userInfo)")
+        
+//        locationManager.stopUpdatingLocation()
+//        self.updatingLocation = false
+//        
+//        self.delegate?.locationManagerDidFinishRequestingUserLocation()
+    }
+    
+    func locationManagerDidPauseLocationUpdates(manager: CLLocationManager) {
+        print(" PAUSED location updates")
+    }
+    
+    func locationManagerDidResumeLocationUpdates(manager: CLLocationManager) {
+        print(" RESUMED location updates")
     }
     
 }

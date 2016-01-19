@@ -10,6 +10,7 @@ import MapKit
 
 protocol LocationManagement {
     var delegate:LocationManagerDelegate?{get set}
+    var isUpdatingLocation:Bool{get}
     func checkPermissions()
     func checkLocationServicesEnabled() -> Bool
     func askForLocationUsage()

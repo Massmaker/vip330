@@ -26,6 +26,7 @@
 		BC7A9B1C1C4ED88100938EAA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */; };
 		BC7A9B1E1C4EE0C900938EAA /* NetworkResponseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B1D1C4EE0C900938EAA /* NetworkResponseConverter.swift */; };
 		BC7A9B201C4EEF8A00938EAA /* MainMapViewController+LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B1F1C4EEF8A00938EAA /* MainMapViewController+LocationManagerDelegate.swift */; };
+		BC7A9B231C4EF55400938EAA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B221C4EF55400938EAA /* UIViewController+Extensions.swift */; };
 		BC9902451C4ECDE000EA2316 /* UserRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */; };
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BC7A9B1D1C4EE0C900938EAA /* NetworkResponseConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponseConverter.swift; sourceTree = "<group>"; };
 		BC7A9B1F1C4EEF8A00938EAA /* MainMapViewController+LocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainMapViewController+LocationManagerDelegate.swift"; sourceTree = "<group>"; };
+		BC7A9B221C4EF55400938EAA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationData.swift; sourceTree = "<group>"; };
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		BC7A9B211C4EF53E00938EAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A9B221C4EF55400938EAA /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BC9902431C4ECDC900EA2316 /* CustomObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 			children = (
 				BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */,
 				BC75697E1C4D87B500C56414 /* HelperFunctions.swift */,
+				BC7A9B211C4EF53E00938EAA /* Extensions */,
 				BC7A9B161C4ED7EB00938EAA /* Enums */,
 				BC7A9B051C4ED70F00938EAA /* Protocols */,
 				BC9902431C4ECDC900EA2316 /* CustomObjects */,
@@ -338,6 +349,7 @@
 			files = (
 				BC7569871C4D918C00C56414 /* ApiCalls.swift in Sources */,
 				BCE2DE411C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift in Sources */,
+				BC7A9B231C4EF55400938EAA /* UIViewController+Extensions.swift in Sources */,
 				BC7A9B1E1C4EE0C900938EAA /* NetworkResponseConverter.swift in Sources */,
 				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
 				BC7A9B0E1C4ED75200938EAA /* LocationManagerDelegate.swift in Sources */,

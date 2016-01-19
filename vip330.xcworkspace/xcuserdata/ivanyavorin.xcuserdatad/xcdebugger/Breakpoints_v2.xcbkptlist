@@ -470,11 +470,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935613.336041"
+            timestampString = "474937110.056449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "locationManagerPermissionsStatus(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -482,27 +482,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935613.336041"
+            timestampString = "474937736.099421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "locationManagerDidStartRequestingUserLocation()"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "vip330.MainMapViewController.locationManagerDidStartRequestingUserLocation (vip330.MainMapViewController)() -&gt; ()"
                   moduleName = "vip330"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-                  timestampString = "474936058.205047"
+                  timestampString = "474936362.983233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -510,14 +510,14 @@
                   offsetFromSymbolStart = "10">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "dynamic vip330.MainMapViewController.locationManagerDidStartRequestingUserLocation (vip330.MainMapViewController)() -&gt; ()"
                   moduleName = "vip330"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-                  timestampString = "474936058.205519"
+                  timestampString = "474936362.983626"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -530,27 +530,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935613.336041"
+            timestampString = "474937736.099421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "locationManagerDidFinishRequestingUserLocation()"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "vip330.MainMapViewController.locationManagerDidFinishRequestingUserLocation (vip330.MainMapViewController)() -&gt; ()"
                   moduleName = "vip330"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-                  timestampString = "474936058.2069"
+                  timestampString = "474936362.985323"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -558,14 +558,14 @@
                   offsetFromSymbolStart = "10">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "dynamic vip330.MainMapViewController.locationManagerDidFinishRequestingUserLocation (vip330.MainMapViewController)() -&gt; ()"
                   moduleName = "vip330"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-                  timestampString = "474936058.207092"
+                  timestampString = "474936362.985533"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -582,61 +582,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935613.336041"
+            timestampString = "474937736.099421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "locationManagerUserLocationDidChange(_:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935584.825696"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "locationManagerDidFinishRequestingPermissions(_:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "vip330.MainMapViewController.locationManagerDidFinishRequestingPermissions (vip330.MainMapViewController)(__C.CLAuthorizationStatus) -&gt; ()"
-                  moduleName = "vip330"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-                  timestampString = "474936058.208888"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "dynamic vip330.MainMapViewController.locationManagerDidFinishRequestingPermissions (vip330.MainMapViewController)(__C.CLAuthorizationStatus) -&gt; ()"
-                  moduleName = "vip330"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanyavorin/Documents/Dev/vip330/vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-                  timestampString = "474936058.209061"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "70">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -690,31 +642,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "vip330/ViewControllers/MainMapViewController.swift"
-            timestampString = "474935684.452115"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/Managers/LocationManager.swift"
-            timestampString = "474935707.567877"
+            timestampString = "474937736.099421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "checkPermissions()"
             landmarkType = "5">
          </BreakpointContent>
@@ -726,11 +662,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/Managers/LocationManager.swift"
-            timestampString = "474935967.378648"
+            timestampString = "474937833.290678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "locationManager(_:didChangeAuthorizationStatus:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -742,11 +678,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/Managers/LocationManager.swift"
-            timestampString = "474936144.86413"
+            timestampString = "474937833.290678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -754,15 +690,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/Managers/LocationManager.swift"
-            timestampString = "474936144.86413"
+            timestampString = "474938245.142004"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "locationManager(_:didFailWithError:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -774,11 +710,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935989.821422"
+            timestampString = "474937114.289755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "locationManagerPermissionsStatus(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -790,11 +726,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935990.999809"
+            timestampString = "474937114.289755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "locationManagerPermissionsStatus(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -806,12 +742,188 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
-            timestampString = "474935992.165698"
+            timestampString = "474937114.289755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "locationManagerPermissionsStatus(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
+            timestampString = "474937114.289755"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "locationManagerDidFinishRequestingPermissions(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
+            timestampString = "474937736.099421"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "locationManagerDidFinishRequestingPermissions(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474937833.290678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474937833.290678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "detectUserLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474937736.099421"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "detectUserLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/ViewControllers/MainMapViewController+LocationManagerDelegate.swift"
+            timestampString = "474937741.155841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "locationManagerDidFinishRequestingPermissions(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474937755.992127"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "detectUserLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474937833.290678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "stopMonitoringUserLocationn()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474937880.634102"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "detectUserLocation()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474938245.142004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "locationManagerDidPauseLocationUpdates(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vip330/Managers/LocationManager.swift"
+            timestampString = "474938245.142004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "locationManagerDidResumeLocationUpdates(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

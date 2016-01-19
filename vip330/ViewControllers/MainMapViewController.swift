@@ -26,6 +26,11 @@ class MainMapViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        mapView.showsUserLocation = true
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         locationManager.delegate = self
         if self.locationManager.checkLocationServicesEnabled()
         {
