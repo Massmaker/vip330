@@ -11,6 +11,6 @@ protocol AuthenticationManagement {
     var delegate:AuthenticationManagerDelegate?{get set}
     func startCredentialsChecking()
     func loginWithParameters(email:String, password:String)
-    func registerWithParameters(email:String, password:String)
+    func registerWithParameters(username: String, email:String, password:String)
     
 }

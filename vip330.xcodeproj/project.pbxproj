@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F0768E063B9C0D67D9A853B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53BBC97D6E42B0BD4F27FC4 /* Pods.framework */; };
+		BC705F941C503F34008FF3B5 /* SegueNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC705F931C503F34008FF3B5 /* SegueNames.swift */; };
 		BC75697F1C4D87B500C56414 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75697E1C4D87B500C56414 /* HelperFunctions.swift */; };
 		BC7569811C4D887C00C56414 /* NetworkApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569801C4D887C00C56414 /* NetworkApiCaller.swift */; };
 		BC7569831C4D89A500C56414 /* NetworkingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7569821C4D89A500C56414 /* NetworkingResponse.swift */; };
@@ -44,6 +45,7 @@
 		06E43CC9762F3F321A973562 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		94ED396F9A650F844FC02D33 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B53BBC97D6E42B0BD4F27FC4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC705F931C503F34008FF3B5 /* SegueNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueNames.swift; sourceTree = "<group>"; };
 		BC75697E1C4D87B500C56414 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		BC7569801C4D887C00C56414 /* NetworkApiCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkApiCaller.swift; sourceTree = "<group>"; };
 		BC7569821C4D89A500C56414 /* NetworkingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingResponse.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */,
 				BC75697E1C4D87B500C56414 /* HelperFunctions.swift */,
+				BC705F931C503F34008FF3B5 /* SegueNames.swift */,
 				BC7A9B211C4EF53E00938EAA /* Extensions */,
 				BC7A9B161C4ED7EB00938EAA /* Enums */,
 				BC7A9B051C4ED70F00938EAA /* Protocols */,
@@ -352,6 +355,7 @@
 				BC7A9B231C4EF55400938EAA /* UIViewController+Extensions.swift in Sources */,
 				BC7A9B1E1C4EE0C900938EAA /* NetworkResponseConverter.swift in Sources */,
 				BCE2DE2C1C4D70E800E430F3 /* LoginFormViewController.swift in Sources */,
+				BC705F941C503F34008FF3B5 /* SegueNames.swift in Sources */,
 				BC7A9B0E1C4ED75200938EAA /* LocationManagerDelegate.swift in Sources */,
 				BC7A9B0D1C4ED75200938EAA /* LocationManagement.swift in Sources */,
 				BC7A9B1C1C4ED88100938EAA /* LocationManager.swift in Sources */,

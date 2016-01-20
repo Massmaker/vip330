@@ -49,6 +49,11 @@ class NetworkApiCaller{
         
     }
     
+    func performDiscountCardRequest(userId:String, completion:((response:NetworkingResponse)->()))
+    {
+        
+    }
+    
     
     private func getRequest(apiCall: ApiCalls) -> NSURLRequest {
         let info = apiCall.requestParameters

@@ -16,7 +16,7 @@ extension LoginFormViewController:AuthenticationManagerDelegate {
         self.checkLoginButtonEnabled()
     }
     
-    func loginProcessDidFinishWithresult(userId: String, error: NetworkingError?) {
+    func loginProcessDidFinishWithResult(userId: String, error: NetworkingError?) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         anAppDelegate()?.currentUserID = userId
         guard let anError = error else

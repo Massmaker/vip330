@@ -18,7 +18,7 @@ extension AuthenticationManagerDelegate{
         assert(false, "loginProcessDidStart method not implemented")
     }
     
-    func loginProcessDidFinishWithresult(userId:String, error:NetworkingError?){
+    func loginProcessDidFinishWithResult(userId:String, error:NetworkingError?){
         assert(false, "loginProcessDidFinishWithresult method not implemented")
     }
     
@@ -47,7 +47,7 @@ extension LaunchScreenViewController:AuthenticationManagerDelegate
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
     }
     
-    func loginProcessDidFinishWithresult(userId:String, error:NetworkingError?)
+    func loginProcessDidFinishWithResult(userId:String, error:NetworkingError?)
     {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }

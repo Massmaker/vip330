@@ -56,22 +56,25 @@ class AuthenticationManager:AuthenticationManagement{
             case .Success(let response):
                 if let dict = response as? [String:String], userIdRecieved = dict["userId"]
                 {
-                    self?.delegate?.loginProcessDidFinishWithresult("\(userIdRecieved)", error: nil)
+                    self?.delegate?.loginProcessDidFinishWithResult("\(userIdRecieved)", error: nil)
                     self?.defaultsHandler.setEmailToDefaults(email)
                     self?.defaultsHandler.setPasswordToDefaults(password)
                     self?.defaultsHandler.setUserIDToDefaults(userIdRecieved)
                     self?.defaultsHandler.syncronyzeDefaults()
                 }
             case .Failure(let error):
-                self?.delegate?.loginProcessDidFinishWithresult("", error: error)
+                self?.delegate?.loginProcessDidFinishWithResult("", error: error)
             }
             
         }
     }
     
-    func registerWithParameters(email:String, password:String)
+    func registerWithParameters(username: String, email:String, password:String)
     {
         self.delegate?.authenticationProcessDidStart()
-        //network handler register with params
+        let userRegData = UserRegistrationData(username:username, email:email, password:password)
+        networkHandler.performRegistration(userRegData) { (response) -> () in
+            
+        }
     }
 }
