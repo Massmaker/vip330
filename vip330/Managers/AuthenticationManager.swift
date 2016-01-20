@@ -57,6 +57,10 @@ class AuthenticationManager:AuthenticationManagement{
                 if let dict = response as? [String:String], userIdRecieved = dict["userId"]
                 {
                     self?.delegate?.loginProcessDidFinishWithresult("\(userIdRecieved)", error: nil)
+                    self?.defaultsHandler.setEmailToDefaults(email)
+                    self?.defaultsHandler.setPasswordToDefaults(password)
+                    self?.defaultsHandler.setUserIDToDefaults(userIdRecieved)
+                    self?.defaultsHandler.syncronyzeDefaults()
                 }
             case .Failure(let error):
                 self?.delegate?.loginProcessDidFinishWithresult("", error: error)

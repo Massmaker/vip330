@@ -61,7 +61,6 @@ class LocationManager: NSObject , LocationManagement {
         
         locationManager.distanceFilter = CLLocationDistance(50.0)
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-       
         locationManager.startUpdatingLocation()
         
     }

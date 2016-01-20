@@ -17,6 +17,7 @@ class MainMapViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.mapView.setRegion(locationManager.defaultLocation, animated: false)
     }
 
     override func didReceiveMemoryWarning() {

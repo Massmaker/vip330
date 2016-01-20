@@ -57,6 +57,31 @@ class LaunchScreenViewController: UIViewController {
     
     func showMapViewScreen(email:String)
     {
+        let greetingEmailLabel = UILabel()
+        greetingEmailLabel.textAlignment = .Center
+        greetingEmailLabel.text = email
+        greetingEmailLabel.sizeToFit()
         
+        greetingEmailLabel.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds) )
+        
+        self.view.addSubview(greetingEmailLabel)
+        let timeOut = dispatch_time(DISPATCH_TIME_NOW, Int64(Double(Int64(NSEC_PER_SEC)) * 0.5))
+        dispatch_after(timeOut, dispatch_get_main_queue()) {[unowned self] () -> Void in
+            
+            greetingEmailLabel.removeFromSuperview()
+            self.setRootViewControllerToMainMapView()
+        }
+    }
+    
+    private func setRootViewControllerToMainMapView()
+    {
+        guard let mapVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainMapViewController") as? MainMapViewController else
+        {
+            return
+        }
+        
+        let navHolder = UINavigationController(rootViewController: mapVC)
+        
+        anAppDelegate()?.window?.rootViewController = navHolder
     }
 }

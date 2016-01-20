@@ -17,3 +17,10 @@ protocol LocationManagement {
     func detectUserLocation()
     func stopMonitoringUserLocationn()
 }
+
+extension LocationManagement{
+    var defaultLocation:MKCoordinateRegion{
+        let region = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D(latitude: 52.234641, longitude: 21.018184), 2000, 2000)
+        return region
+    }
+}
