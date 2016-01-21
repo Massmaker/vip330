@@ -38,6 +38,8 @@ enum ApiCalls{
                 path = "com_users/loginFromAndroid"
             case .RequestAllGeodata:
                 path = "location-getShops"
+                let bodyString = "option=com_focalpoint&task=location.getShops"
+                data = bodyString.dataUsingEncoding(NSUTF8StringEncoding)
             case .RequestGeodata(let userId, let lattitude, let longtitude):
                 print(" - RequestGeodata by current user and location is not implemented")
             case .RequestDiscountCardImage(let userId):
