@@ -46,7 +46,12 @@ class LoginFormViewController: FormViewController {
         })
     }
     
-    func startLoginButtonAction(sender:AnyObject)
+    @IBAction func showRegistrationViewController(sender:AnyObject?)
+    {
+        self.performSegueWithIdentifier(LoginToRegistrationSegue, sender: sender)
+    }
+    
+    @IBAction func startLoginButtonAction(sender:AnyObject)
     {
         self.startLogin()
     }
@@ -64,15 +69,16 @@ class LoginFormViewController: FormViewController {
             let password = self.userPassword where !password.characters.isEmpty
             else
         {
-            self.navigationItem.rightBarButtonItem = nil
+            self.navigationItem.rightBarButtonItem?.enabled = false
             return
         }
         
-        guard let _ = self.navigationItem.rightBarButtonItem else
+        guard let loginButton = self.navigationItem.rightBarButtonItem else
         {
              self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Login", style: .Plain, target: self, action: "startLoginButtonAction:")
             return
         }
+        loginButton.enabled = true
     }
     
     func showMapViewController()

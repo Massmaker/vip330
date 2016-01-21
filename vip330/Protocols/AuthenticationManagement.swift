@@ -7,7 +7,7 @@
 //
 
 import Foundation
-protocol AuthenticationManagement {
+protocol AuthenticationManagement:class {
     var delegate:AuthenticationManagerDelegate?{get set}
     func startCredentialsChecking()
     func loginWithParameters(email:String, password:String)

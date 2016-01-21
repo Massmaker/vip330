@@ -26,9 +26,6 @@ extension LoginFormViewController:AuthenticationManagerDelegate {
         }
         //TODO: handle errors
         print("AuthenticationManagerDelegate:   error login: \n \(anError)")
-    }
-    
-    func registrationProcessDidFinishWithResult(userId: String?, error: NetworkingError?) {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        self.showAlertWithTitle("error", message: anError.displayMessage, cancelButtonTitle: "Ok")
     }
 }

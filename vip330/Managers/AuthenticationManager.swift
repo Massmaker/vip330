@@ -49,7 +49,7 @@ class AuthenticationManager:AuthenticationManagement{
     func loginWithParameters(email:String, password:String)
     {
         self.delegate?.authenticationProcessDidStart()
-        //network handler login with params
+        
         networkHandler.performLogin([email, password]) {[weak self] (response) in
             switch response
             {
@@ -73,8 +73,22 @@ class AuthenticationManager:AuthenticationManagement{
     {
         self.delegate?.authenticationProcessDidStart()
         let userRegData = UserRegistrationData(username:username, email:email, password:password)
-        networkHandler.performRegistration(userRegData) { (response) -> () in
-            
+        
+        networkHandler.performRegistration(userRegData) {[weak self] (response)  in
+            switch response
+            {
+                case .Success(let response):
+                    if let dict = response as? [String:String], userIdRecieved = dict["userId"]
+                    {
+                        self?.defaultsHandler.setEmailToDefaults(email)
+                        self?.defaultsHandler.setPasswordToDefaults(password)
+                        self?.defaultsHandler.setUserIDToDefaults(userIdRecieved)
+                        self?.defaultsHandler.syncronyzeDefaults()
+                        self?.delegate?.registrationProcessDidFinishWithResult(userIdRecieved, error: nil)
+                    }
+                case .Failure(let error):
+                    self?.delegate?.registrationProcessDidFinishWithResult(nil, error: error)
+            }
         }
     }
 }

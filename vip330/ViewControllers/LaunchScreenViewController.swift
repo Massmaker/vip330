@@ -28,11 +28,6 @@ class LaunchScreenViewController: UIViewController {
         self.authManager.startCredentialsChecking()
     }
     
-    func registrationButtonAction(sender:AnyObject?)
-    {
-        
-    }
-    
     func showLoginScreen(credentialsResult:CredentialsCheckResult)
     {
         guard let loginNavHolder = self.storyboard?.instantiateViewControllerWithIdentifier("LoginNavigationController") as? UINavigationController else

@@ -10,20 +10,21 @@ import Foundation
 import UIKit
 
 extension AuthenticationManagerDelegate{
+    //making all methods optional
     func authenticatorCredenticlaCheckResult(result: CredentialsCheckResult) {
-        assert(false, "authenticatorCredenticlaCheckResult method not implemented")
+        assert(false, "\"authenticatorCredenticlaCheckResult\" method not implemented")
     }
     
     func authenticationProcessDidStart(){
-        assert(false, "loginProcessDidStart method not implemented")
+        assert(false, "\"loginProcessDidStart\" method not implemented")
     }
     
     func loginProcessDidFinishWithResult(userId:String, error:NetworkingError?){
-        assert(false, "loginProcessDidFinishWithresult method not implemented")
+        assert(false, "\"loginProcessDidFinishWithresult\" method not implemented")
     }
     
     func registrationProcessDidFinishWithResult(userId:String?, error:NetworkingError?){
-        
+        assert(false, "\"registrationProcessDidFinishWithResult\" method not implemented")
     }
 }
 

@@ -80,7 +80,18 @@
                             <constraint firstItem="KDw-zK-PkD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tA1-dm-n2J"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vX6-TN-KHt"/>
+                    <navigationItem key="navigationItem" id="vX6-TN-KHt">
+                        <barButtonItem key="leftBarButtonItem" title="Registration" id="c6Y-mi-fNs">
+                            <connections>
+                                <action selector="showRegistrationViewController:" destination="BYZ-38-t0r" id="veD-ct-vtl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Login" id="BK5-It-wfD">
+                            <connections>
+                                <action selector="startLoginButtonAction:" destination="BYZ-38-t0r" id="flT-BC-VP9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="KDw-zK-PkD" id="Rrl-F8-JO6"/>
                         <segue destination="cS1-Q1-6G1" kind="show" identifier="ShowRegistrationSegue" id="GhG-qv-fwe"/>
@@ -102,12 +113,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hay-zF-Kfz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hay-zF-Kfz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hay-zF-Kfz" firstAttribute="bottom" secondItem="Tqa-6d-HrQ" secondAttribute="top" id="F4j-nw-Lle"/>
+                            <constraint firstItem="hay-zF-Kfz" firstAttribute="top" secondItem="JT9-x4-3Ey" secondAttribute="top" id="Xay-ST-Wh4"/>
+                            <constraint firstItem="hay-zF-Kfz" firstAttribute="leading" secondItem="JT9-x4-3Ey" secondAttribute="leading" id="ZaG-bB-PsB"/>
+                            <constraint firstAttribute="trailing" secondItem="hay-zF-Kfz" secondAttribute="trailing" id="cAM-LZ-D9g"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="hay-zF-Kfz" id="hyb-Jl-cYj"/>

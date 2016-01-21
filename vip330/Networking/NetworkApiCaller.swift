@@ -28,7 +28,7 @@ class NetworkApiCaller{
     func performLogin(parameters:[String], completion:((response:NetworkingResponse)->()))
     {
         let request = getRequest(ApiCalls.Login(email: parameters.first!, password: parameters.last!))
-        manager.request(request).responseData {(responseWithData) -> Void in
+        manager.request(request).responseData {(responseWithData) in
             if let data = responseWithData.data
             {
                 let bgQueue = dispatch_queue_create("LoginResponseParsingQueue", DISPATCH_QUEUE_SERIAL)
@@ -46,7 +46,27 @@ class NetworkApiCaller{
     
     func performRegistration(userData:UserRegistrationData, completion:((response:NetworkingResponse)->()))
     {
-        
+        let regRequest = getRequest(ApiCalls.Registeration(userName: userData.username, email: userData.email, password: userData.password))
+        manager.request(regRequest).responseData { (xmlDataOrErrorResponse) in
+            if let data = xmlDataOrErrorResponse.data
+            {
+                let bgQueue = dispatch_queue_create("RegistrationResponseParsingQueue", DISPATCH_QUEUE_SERIAL)
+                dispatch_async(bgQueue){
+                    let parsedResponse = NetworkXMLResponseConverter.parseRegistrationResponse(data)
+                    dispatchAsyncMain(){
+                       completion(response: parsedResponse)
+                    }
+                }
+            }
+            if xmlDataOrErrorResponse.result.isSuccess
+            {
+                
+            }
+            if xmlDataOrErrorResponse.result.isFailure
+            {
+                
+            }
+        }
     }
     
     func performDiscountCardRequest(userId:String, completion:((response:NetworkingResponse)->()))

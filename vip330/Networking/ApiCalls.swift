@@ -13,6 +13,7 @@ enum ApiCalls{
     case Registeration(userName:String, email:String, password:String)
     case Login(email:String, password:String)
     case RequestGeodata(usedId:String, lattitude:Int, longtitude:Int)
+    case RequestDiscountCardImage(userId:String)
     
     var requestParameters : (method: Alamofire.Method, path: String, parameters:[String:AnyObject]?, body:NSData?) {
         
@@ -39,6 +40,9 @@ enum ApiCalls{
                 let coordinatesString = "<userid>\(userId)<userid><lat>\(lattitude)</lat><lng>\(longtitude)</lng>"
                 let data = coordinatesString.dataUsingEncoding(NSUTF8StringEncoding)
                 return (method:method, path:"geoData", parameters:nil, body:data)
+            case .RequestDiscountCardImage(let userId):
+                print("\n - Todo: implement \"RequestDiscountCardImage\" case\n")
+                print("userId  =  \(userId)")
         }
         
         return (method:method, path:path, parameters:params , body:data)
@@ -71,6 +75,8 @@ enum ApiCalls{
         return xmlString
     }
     
+    
+    // to send geo data in request
     func createGeoBodystringFromInfo(parameters:[String:AnyObject]) -> String
     {
         var xmlString = ""
