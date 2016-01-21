@@ -8,6 +8,7 @@
 
 import Foundation
 import AEXML
+import MapKit
 
 let UnparsableXMLError = NetworkingResponse.Failure(error:NetworkingError.Failure(code: -2, message: "unable to parse response"))
 
@@ -93,12 +94,40 @@ class NetworkXMLResponseConverter {
             print("- Starting reg response parsing")
             print(xmlDoc.xmlString)
             let root = xmlDoc.root
+            print("root: \(root)")
             
-            guard let firstChild = root.children.first, value = firstChild.value else
+            guard root.children.count > 0 else
             {
                 return UnparsableXMLError
             }
             
+            var discountDatasToReturn = [DiscountGeodata]()
+            
+            for aChild in root.children
+            {
+                guard let title = aChild["title"].value else
+                {
+                    continue
+                }
+                let description = aChild["description"].value
+                let phoneNumber = aChild["phone"].value
+                let address = aChild["address"].value
+                let longtitudeValue = aChild["lng"].doubleValue
+                let lattitudeValue = aChild["lat"].doubleValue
+                let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(lattitudeValue), longitude: CLLocationDegrees(longtitudeValue))
+                
+                guard let discountMarker = DiscountGeodata(location: coordinate, title: title) else
+                {
+                    continue
+                }
+                
+                discountMarker.phone = phoneNumber
+                discountMarker.address = address
+                discountMarker.details = description
+                discountDatasToReturn.append(discountMarker)
+            }
+            
+            return NetworkingResponse.Success(response: discountDatasToReturn)
             
         }
         catch let error
@@ -107,7 +136,7 @@ class NetworkXMLResponseConverter {
             print(error)
             return UnparsableXMLError
         }
-        return NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "default implementation"))
+
     }
     
     @warn_unused_result

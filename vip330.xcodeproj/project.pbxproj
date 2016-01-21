@@ -45,6 +45,7 @@
 		BCE2DE371C4D7E5D00E430F3 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */; };
 		BCE2DE3F1C4D808100E430F3 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */; };
 		BCE2DE411C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE401C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift */; };
+		F88D0F211C5130A5006A9A22 /* MainMapViewController+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88D0F201C5130A5006A9A22 /* MainMapViewController+MKMapViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		BCE2DE361C4D7E5D00E430F3 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		BCE2DE401C4D82C800E430F3 /* LaunchScreenViewController+AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LaunchScreenViewController+AuthenticationManagerDelegate.swift"; sourceTree = "<group>"; };
+		F88D0F201C5130A5006A9A22 /* MainMapViewController+MKMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainMapViewController+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				BC7A9AFD1C4ED36B00938EAA /* MainMapViewController.swift */,
 				BC7A9B1F1C4EEF8A00938EAA /* MainMapViewController+LocationManagerDelegate.swift */,
 				BC9269D91C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift */,
+				F88D0F201C5130A5006A9A22 /* MainMapViewController+MKMapViewDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				BC9269DA1C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift in Sources */,
 				BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */,
 				BC7A9B141C4ED7AE00938EAA /* AuthenticationManagerDelegate.swift in Sources */,
+				F88D0F211C5130A5006A9A22 /* MainMapViewController+MKMapViewDelegate.swift in Sources */,
 				BC7569831C4D89A500C56414 /* NetworkingResponse.swift in Sources */,
 				BC9269D81C5063CF00B0F505 /* GeodataObjectsManagerDeleate.swift in Sources */,
 				BC75697F1C4D87B500C56414 /* HelperFunctions.swift in Sources */,

@@ -10,16 +10,30 @@ import Foundation
 import MapKit
 
 class DiscountGeodata {
-    let title:String
-    let details:String
-    let address:String
-    let coordinates:CLLocationCoordinate2D
+    var title:String!
+    var coordinates:CLLocationCoordinate2D!
     
-    init(location:CLLocationCoordinate2D, address:String, title:String, description:String)
+    var details:String?
+    var address:String?
+    var phone:String?
+    
+    
+    init()
     {
-        self.address = address
-        self.details = description
-        self.title = title
+        self.title = ""
+        self.coordinates = CLLocationCoordinate2DMake(CLLocationDegrees(0.0), CLLocationDegrees(0.0))
+    }
+    
+    convenience init?(location:CLLocationCoordinate2D, title:String?)
+    {
+        self.init()
+        
+        guard let _ = title else
+        {
+            return nil
+        }
+        self.title = title!
         self.coordinates = location
+        
     }
 }

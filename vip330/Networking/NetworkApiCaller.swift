@@ -98,7 +98,7 @@ class NetworkApiCaller{
                         {
                             completion(response: NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "Could not parse recieved xml")))
                         }
-                        case .Failure(let error):
+                        case .Failure( _ ):
                             completion(response: geodataResult)
                     }
                 }

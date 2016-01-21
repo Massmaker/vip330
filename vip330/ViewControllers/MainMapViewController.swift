@@ -19,9 +19,12 @@ class MainMapViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.mapView.setRegion(locationManager.defaultLocation, animated: false)
+        self.mapView.setRegion( mapView.regionThatFits(locationManager.defaultLocation), animated: false)
+        
+        mapView.delegate = self
         
         self.discountsManager.delegate = self
+        self.discountsManager.mapView = self.mapView
         self.discountsManager.loadGeodatasFromServer()
     }
 

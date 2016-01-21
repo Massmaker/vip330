@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 enum ApiCalls{
+    
     case Registeration(userName:String, email:String, password:String)
     case Login(email:String, password:String)
     case RequestGeodata(usedId:String, lattitude:Int, longtitude:Int)
@@ -18,7 +19,7 @@ enum ApiCalls{
     
     var requestParameters : (method: Alamofire.Method, path: String, parameters:[String:AnyObject]?, body:NSData?) {
         
-        let method = Alamofire.Method.POST
+        var method = Alamofire.Method.POST
         var data:NSData?
         var path:String = ""
         var params:[String:AnyObject]?
@@ -36,22 +37,25 @@ enum ApiCalls{
                 let bodyString = "option=com_users&task=user.loginFromAndroid&username=\(email)&password=\(password)"
                 data = bodyString.dataUsingEncoding(NSUTF8StringEncoding)
                 path = "com_users/loginFromAndroid"
+            
+            case .RequestDiscountCardImage(let userId):
+                print("\n - Todo: implement \"RequestDiscountCardImage\" case\n")
+                print("userId  =  \(userId)")
+                method = Alamofire.Method.GET
+                path = "/pdf/card_id_\(userId).png"
             case .RequestAllGeodata:
                 path = "location-getShops"
                 let bodyString = "option=com_focalpoint&task=location.getShops"
                 data = bodyString.dataUsingEncoding(NSUTF8StringEncoding)
-            case .RequestGeodata(let userId, let lattitude, let longtitude):
-                print(" - RequestGeodata by current user and location is not implemented")
-            case .RequestDiscountCardImage(let userId):
-                print("\n - Todo: implement \"RequestDiscountCardImage\" case\n")
-                print("userId  =  \(userId)")
+            //case .RequestGeodata(let userId, let lattitude, let longtitude):
+               // print(" - RequestGeodata by current user and location is not implemented")
+            default:
+                break
             
         }
         
         return (method:method, path:path, parameters:params , body:data)
     }
-    
-    
     
     func createBodystringFromInfo(parametersInfo:[String:AnyObject]) -> String
     {
@@ -80,9 +84,9 @@ enum ApiCalls{
     
     
     // to send geo data in request
-    func createGeoBodystringFromInfo(parameters:[String:AnyObject]) -> String
-    {
-        var xmlString = ""
-        return xmlString
-    }
+//    func createGeoBodystringFromInfo(parameters:[String:AnyObject]) -> String
+//    {
+//        var xmlString = ""
+//        return xmlString
+//    }
 }
