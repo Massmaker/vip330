@@ -62,6 +62,6 @@ extension MainMapViewController:LocationManagerDelegate{
     }
     
     func locationManagerUserLocationDidChange(location: CLLocation) {
-        self.mapView.setCenterCoordinate(location.coordinate, animated: true)
+        self.mapView.setCenterCoordinate(location.coordinate, animated: false)
     }
 }
