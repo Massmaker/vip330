@@ -30,6 +30,10 @@
 		BC7A9B231C4EF55400938EAA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A9B221C4EF55400938EAA /* UIViewController+Extensions.swift */; };
 		BC9269CF1C5044BC00B0F505 /* UserPreRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9269CE1C5044BC00B0F505 /* UserPreRegistrationData.swift */; };
 		BC9269D21C504B3200B0F505 /* RegistrationFormViewController+AuthenticationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9269D11C504B3200B0F505 /* RegistrationFormViewController+AuthenticationManagerDelegate.swift */; };
+		BC9269D41C50605900B0F505 /* DiscountGeodata.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9269D31C50605900B0F505 /* DiscountGeodata.swift */; };
+		BC9269D61C5062E000B0F505 /* GeodataObjectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9269D51C5062E000B0F505 /* GeodataObjectsManager.swift */; };
+		BC9269D81C5063CF00B0F505 /* GeodataObjectsManagerDeleate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9269D71C5063CF00B0F505 /* GeodataObjectsManagerDeleate.swift */; };
+		BC9269DA1C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9269D91C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift */; };
 		BC9902451C4ECDE000EA2316 /* UserRegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */; };
 		BCE2DE151C4D6A6200E430F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */; };
 		BCE2DE1A1C4D6A6200E430F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE2DE181C4D6A6200E430F3 /* Main.storyboard */; };
@@ -69,6 +73,10 @@
 		BC7A9B221C4EF55400938EAA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BC9269CE1C5044BC00B0F505 /* UserPreRegistrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreRegistrationData.swift; sourceTree = "<group>"; };
 		BC9269D11C504B3200B0F505 /* RegistrationFormViewController+AuthenticationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationFormViewController+AuthenticationManagerDelegate.swift"; sourceTree = "<group>"; };
+		BC9269D31C50605900B0F505 /* DiscountGeodata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountGeodata.swift; sourceTree = "<group>"; };
+		BC9269D51C5062E000B0F505 /* GeodataObjectsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeodataObjectsManager.swift; sourceTree = "<group>"; };
+		BC9269D71C5063CF00B0F505 /* GeodataObjectsManagerDeleate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeodataObjectsManagerDeleate.swift; sourceTree = "<group>"; };
+		BC9269D91C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift"; sourceTree = "<group>"; };
 		BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationData.swift; sourceTree = "<group>"; };
 		BCE2DE111C4D6A6200E430F3 /* vip330.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vip330.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DE141C4D6A6200E430F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 				BC7A9B101C4ED7AE00938EAA /* AuthenticationManagement.swift */,
 				BC7A9B111C4ED7AE00938EAA /* AuthenticationManagerDelegate.swift */,
 				BC7A9B121C4ED7AE00938EAA /* UserDefaultsManagement.swift */,
+				BC9269D71C5063CF00B0F505 /* GeodataObjectsManagerDeleate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 			children = (
 				BC9902441C4ECDE000EA2316 /* UserRegistrationData.swift */,
 				BC9269CE1C5044BC00B0F505 /* UserPreRegistrationData.swift */,
+				BC9269D31C50605900B0F505 /* DiscountGeodata.swift */,
 			);
 			path = CustomObjects;
 			sourceTree = "<group>";
@@ -206,6 +216,7 @@
 				BC9269D11C504B3200B0F505 /* RegistrationFormViewController+AuthenticationManagerDelegate.swift */,
 				BC7A9AFD1C4ED36B00938EAA /* MainMapViewController.swift */,
 				BC7A9B1F1C4EEF8A00938EAA /* MainMapViewController+LocationManagerDelegate.swift */,
+				BC9269D91C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,6 +227,7 @@
 				BCE2DE301C4D783900E430F3 /* DefaultsManager.swift */,
 				BCE2DE3E1C4D808100E430F3 /* AuthenticationManager.swift */,
 				BC7A9B1B1C4ED88100938EAA /* LocationManager.swift */,
+				BC9269D51C5062E000B0F505 /* GeodataObjectsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -374,9 +386,13 @@
 				BC7569851C4D8FCC00C56414 /* NetworkingError.swift in Sources */,
 				BCE2DE311C4D783900E430F3 /* DefaultsManager.swift in Sources */,
 				BCE2DE3F1C4D808100E430F3 /* AuthenticationManager.swift in Sources */,
+				BC9269D61C5062E000B0F505 /* GeodataObjectsManager.swift in Sources */,
+				BC9269D41C50605900B0F505 /* DiscountGeodata.swift in Sources */,
+				BC9269DA1C50680000B0F505 /* MainMapViewCoontroller+GeodataObjectsManagerDeleate.swift in Sources */,
 				BCE2DE2D1C4D70E800E430F3 /* RegistrationFormViewController.swift in Sources */,
 				BC7A9B141C4ED7AE00938EAA /* AuthenticationManagerDelegate.swift in Sources */,
 				BC7569831C4D89A500C56414 /* NetworkingResponse.swift in Sources */,
+				BC9269D81C5063CF00B0F505 /* GeodataObjectsManagerDeleate.swift in Sources */,
 				BC75697F1C4D87B500C56414 /* HelperFunctions.swift in Sources */,
 				BC7A9B1A1C4ED82E00938EAA /* UserDefaultsKeys.swift in Sources */,
 				BC7569811C4D887C00C56414 /* NetworkApiCaller.swift in Sources */,

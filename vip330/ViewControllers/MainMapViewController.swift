@@ -13,11 +13,16 @@ class MainMapViewController: UIViewController {
 
     @IBOutlet weak var mapView:MKMapView!
     lazy var locationManager = LocationManager()
+    lazy var discountsManager = GeodataObjectsManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.mapView.setRegion(locationManager.defaultLocation, animated: false)
+        
+        self.discountsManager.delegate = self
+        self.discountsManager.loadGeodatasFromServer()
     }
 
     override func didReceiveMemoryWarning() {

@@ -83,4 +83,37 @@ class NetworkXMLResponseConverter {
         }
         return NetworkingResponse.Success(response: nil)
     }
+    
+    @warn_unused_result
+    class func parseGeodataResponse(data:NSData) -> NetworkingResponse
+    {
+        do{
+            
+            let xmlDoc = try AEXMLDocument(xmlData: data)
+            print("- Starting reg response parsing")
+            print(xmlDoc.xmlString)
+            let root = xmlDoc.root
+            
+            guard let firstChild = root.children.first, value = firstChild.value else
+            {
+                return UnparsableXMLError
+            }
+            
+            
+        }
+        catch let error
+        {
+            print(" error while parsing XML:")
+            print(error)
+            return UnparsableXMLError
+        }
+        return NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "default implementation"))
+    }
+    
+    @warn_unused_result
+    class func convertImageDataToImage(data:NSData) -> NetworkingResponse
+    {
+        return NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "default implementation"))
+    }
+    
 }

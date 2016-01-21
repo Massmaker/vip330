@@ -13,6 +13,7 @@ enum ApiCalls{
     case Registeration(userName:String, email:String, password:String)
     case Login(email:String, password:String)
     case RequestGeodata(usedId:String, lattitude:Int, longtitude:Int)
+    case RequestAllGeodata
     case RequestDiscountCardImage(userId:String)
     
     var requestParameters : (method: Alamofire.Method, path: String, parameters:[String:AnyObject]?, body:NSData?) {
@@ -34,15 +35,15 @@ enum ApiCalls{
                 path = "user-loginFromAndroid"
                 let bodyString = "option=com_users&task=user.loginFromAndroid&username=\(email)&password=\(password)"
                 data = bodyString.dataUsingEncoding(NSUTF8StringEncoding)
-                return (method:method, path:"com_users/loginFromAndroid", parameters:nil, body:data)
-            
+                path = "com_users/loginFromAndroid"
+            case .RequestAllGeodata:
+                path = "location-getShops"
             case .RequestGeodata(let userId, let lattitude, let longtitude):
-                let coordinatesString = "<userid>\(userId)<userid><lat>\(lattitude)</lat><lng>\(longtitude)</lng>"
-                let data = coordinatesString.dataUsingEncoding(NSUTF8StringEncoding)
-                return (method:method, path:"geoData", parameters:nil, body:data)
+                print(" - RequestGeodata by current user and location is not implemented")
             case .RequestDiscountCardImage(let userId):
                 print("\n - Todo: implement \"RequestDiscountCardImage\" case\n")
                 print("userId  =  \(userId)")
+            
         }
         
         return (method:method, path:path, parameters:params , body:data)

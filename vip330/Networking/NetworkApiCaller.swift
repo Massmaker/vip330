@@ -10,11 +10,10 @@ import Foundation
 import Alamofire
 
 class NetworkApiCaller{
-    let baseAdress = "http://vip330.com"
+    
+    private let baseAdress = "http://vip330.com"
     
     private var manager: Alamofire.Manager
-    
-    private lazy var responseParser = NetworkXMLResponseConverter()
     
     init(){
         let serverTrustPolicies: Dictionary<String, ServerTrustPolicy> = ["baseAdress": .DisableEvaluation]
@@ -65,6 +64,53 @@ class NetworkApiCaller{
             if xmlDataOrErrorResponse.result.isFailure
             {
                 
+            }
+        }
+    }
+    
+    func loadGeoData(completion:((response:NetworkingResponse)->()))
+    {
+        let geodataRequest = getRequest(ApiCalls.RequestAllGeodata)
+        
+        manager.request(geodataRequest).responseData { (aResponse) -> Void in
+            if aResponse.result.isFailure{
+                
+            }
+            else if aResponse.result.isSuccess{
+                guard let geoData = aResponse.data else
+                {
+                    assert(false, " No Response data .")
+                    return
+                }
+                
+                
+                
+                let bgParsingOperation = NSBlockOperation(){ _ in
+                    NSLog("BG geodata parsing operation did START parsing xml")
+                    let geodataResult = NetworkXMLResponseConverter.parseGeodataResponse(geoData)
+                    switch geodataResult{
+                    case .Success(let response):
+                        if let geoDatas = response as? [DiscountGeodata]
+                        {
+                            completion(response: NetworkingResponse.Success(response: geoDatas))
+                        }
+                        else
+                        {
+                            completion(response: NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "Could not parse recieved xml")))
+                        }
+                        case .Failure(let error):
+                            completion(response: geodataResult)
+                    }
+                }
+                
+                bgParsingOperation.qualityOfService = .Utility
+                bgParsingOperation.completionBlock = {_ in NSLog("BG geodata parsing operation did FINISH parsing xml")}
+                
+                let queue = NSOperationQueue()
+                queue.maxConcurrentOperationCount = 1
+                queue.suspended = false
+                queue.addOperation(bgParsingOperation)
+
             }
         }
     }
