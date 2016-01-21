@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '31D23D3C136E45DD0D34B599'
+               BlueprintIdentifier = '0E99C1209361FCB90F149C4D'
                BlueprintName = 'AEXML'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'AEXML.framework'>
