@@ -20,7 +20,7 @@ class NetworkXMLResponseConverter {
         do{
             let xmlDoc = try AEXMLDocument(xmlData:data)
             print(" - starting")
-            print(xmlDoc.xmlString)
+            //print(xmlDoc.xmlString)
             let root = xmlDoc.root
             
             guard let firstChild = root.children.first, value = firstChild.value else
@@ -33,6 +33,7 @@ class NetworkXMLResponseConverter {
                 let secondChild = root.children[1]
                 if let userId = secondChild.value
                 {
+                    print(" - Logged user id: \(userId)")
                     return NetworkingResponse.Success(response: ["userId":userId])
                 }
             }
@@ -55,7 +56,7 @@ class NetworkXMLResponseConverter {
         do{
             let xmlDoc = try AEXMLDocument(xmlData: data)
             print("- Starting reg response parsing")
-            print(xmlDoc.xmlString)
+            //print(xmlDoc.xmlString)
             let root = xmlDoc.root
             
             guard let firstChild = root.children.first, value = firstChild.value else
@@ -68,6 +69,7 @@ class NetworkXMLResponseConverter {
                 let secondChild = root.children[1]
                 if let userId = secondChild.value
                 {
+                    print(" - Registered user id: \(userId)")
                     return NetworkingResponse.Success(response: ["userId":userId])
                 }
             }
@@ -92,9 +94,9 @@ class NetworkXMLResponseConverter {
             
             let xmlDoc = try AEXMLDocument(xmlData: data)
             print("- Starting reg response parsing")
-            print(xmlDoc.xmlString)
+            //print(xmlDoc.xmlString)
             let root = xmlDoc.root
-            print("root: \(root)")
+            //print("root: \(root)")
             
             guard root.children.count > 0 else
             {

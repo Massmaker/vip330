@@ -84,11 +84,11 @@ extension LocationManager:CLLocationManagerDelegate {
         }
         else
         {
-            print("locations:")
-            for aLoc in locations
-            {
-                print(aLoc.description)
-            }
+//            print("locations:")
+//            for aLoc in locations
+//            {
+//                print(aLoc.description)
+//            }
             
             self.delegate?.locationManagerUserLocationDidChange(locations.first!)
         }

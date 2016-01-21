@@ -20,5 +20,16 @@ extension MainMapViewController: GeodataObjectsManagerDeleate{
 
     func managerDidFailToLoadGeodata(error: ErrorType) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        
+        if let anError = error as? NetworkingError
+        {
+            switch anError{
+            case .Unknown(let message):
+                 self.showAlertWithTitle("Failed to load discounts data", message: "Unknown error: \(message)", cancelButtonTitle: "Ok")
+            case .Failure(let code, let message):
+                self.showAlertWithTitle("Failed to load discounts data", message: "Error: code:\(code), message:\(message)", cancelButtonTitle: "Ok")
+            }
+        }
+       
     }
 }

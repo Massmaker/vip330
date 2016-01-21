@@ -23,3 +23,8 @@ func dispatchAsyncMain(block:dispatch_block_t)
 {
     dispatch_async(dispatch_get_main_queue(),block)
 }
+
+func dispatchAsyncBackground(block:dispatch_block_t)
+{
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), block)
+}

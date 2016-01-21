@@ -6,7 +6,8 @@
 //  Copyright © 2016 Massmaker. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
 class DefaultsManager:UserDefaultsManagement {
     
     private let defaults = NSUserDefaults.standardUserDefaults()
@@ -39,6 +40,34 @@ class DefaultsManager:UserDefaultsManagement {
     func getUserIdFromDefaults() -> String?
     {
         return defaults.objectForKey(UserDefaultsKeys.UserID.rawValue) as? String
+    }
+    
+    func getDiscountImageFromDocumentsForUserId(userId:String) -> UIImage?
+    {
+        let docsPath = documentsFolder()
+        let imagePath = docsPath.stringByAppendingPathComponent("\(userId).png")
+        guard let data = NSData(contentsOfFile: imagePath), image = UIImage(data: data) else
+        {
+            return nil
+        }
+        
+        return image
+    }
+    
+    func saveDiscountImageToDocuments(image:UIImage, forUserId:String)
+    {
+        let dataToSave = UIImagePNGRepresentation(image)
+        
+        let docsPath = documentsFolder()
+        
+        let filePath = docsPath.stringByAppendingPathComponent("\(forUserId).png")
+        
+        dataToSave?.writeToFile(filePath, atomically: true)
+    }
+    
+    private func documentsFolder() -> NSString
+    {
+        return NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory , NSSearchPathDomainMask.UserDomainMask, true).last! as NSString
     }
     
 }

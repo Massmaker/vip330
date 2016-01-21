@@ -12,4 +12,5 @@ enum UserDefaultsKeys:String
     case Password = "Password"
     case Email = "Email"
     case UserID = "UserID"
+    case DiscountImageData = "DiscountImage"
 }

@@ -9,3 +9,4 @@
 import Foundation
 
 let LoginToRegistrationSegue = "ShowRegistrationSegue"
+let MapToDiscountImageSegue = "ShowDiscountSegue"

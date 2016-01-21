@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Btf-io-gCA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Btf-io-gCA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Launch Screen View Controller-->
@@ -49,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="c1K-Jq-5yk" id="1iz-JL-ke6"/>
+                        <segue destination="43V-wB-55E" kind="show" identifier="ShowDiscountSegue" id="7H6-ZI-pkk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoM-X2-QtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,6 +153,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNB-6V-6gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="314" y="507"/>
+        </scene>
+        <!--Discount Image View Controller-->
+        <scene sceneID="anb-V8-X5q">
+            <objects>
+                <viewController id="43V-wB-55E" customClass="DiscountImageViewController" customModule="vip330" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g9R-e1-SCy"/>
+                        <viewControllerLayoutGuide type="bottom" id="FQK-hn-jJB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KSL-v8-zG0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-9P-jxe">
+                                <rect key="frame" x="14" y="28" width="566" height="552"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FQK-hn-jJB" firstAttribute="top" secondItem="oiz-9P-jxe" secondAttribute="bottom" constant="20" id="8Be-Vg-V53"/>
+                            <constraint firstItem="oiz-9P-jxe" firstAttribute="top" secondItem="g9R-e1-SCy" secondAttribute="bottom" constant="8" id="Dtz-Qr-YaL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oiz-9P-jxe" secondAttribute="trailing" id="tdv-4O-6FP"/>
+                            <constraint firstItem="oiz-9P-jxe" firstAttribute="leading" secondItem="KSL-v8-zG0" secondAttribute="leadingMargin" constant="-6" id="vAz-Wl-tkQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oiz-9P-jxe" id="Aln-o8-1Mv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTR-Ot-s9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="-208"/>
         </scene>
     </scenes>
 </document>

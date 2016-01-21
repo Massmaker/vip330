@@ -117,7 +117,50 @@ class NetworkApiCaller{
     
     func performDiscountCardRequest(userId:String, completion:((response:NetworkingResponse)->()))
     {
+        let discountCardRequest = getRequest(ApiCalls.RequestDiscountCardImage(userId: userId))
+//        manager.request(discountCardRequest).responseData { (responseFromServer) -> Void in
+//            
+////            if responseFromServer.result.isSuccess
+////            {
+//                guard let imageData = responseFromServer.data else
+//                {
+//                    assert(false, " No Response data .")
+//                    return
+//                }
+//                
+//                guard let image = UIImage(data: imageData) else
+//                {
+//                    completion(response: NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "Colud not display image")))
+//                    return
+//                }
+//                
+//                completion(response: .Success(response:image))
+////            }
+//        }
         
+        
+        manager.request(discountCardRequest).response { (req, resp, responseData, responseError) -> Void in
+            //print("response: \(resp)")
+            guard let imageData = responseData else
+            {
+                assert(false, " No Response data .")
+                return
+            }
+            
+            if let anError = responseError
+            {
+                completion(response: NetworkingResponse.Failure(error: NetworkingError.Failure(code: anError.code, message: anError.localizedDescription)) )
+                return
+            }
+            
+            guard let image = UIImage(data: imageData) else
+            {
+                completion(response: NetworkingResponse.Failure(error: NetworkingError.Unknown(message: "Colud not display image")))
+                return
+            }
+            
+            completion(response: .Success(response:image))
+        }
     }
     
     

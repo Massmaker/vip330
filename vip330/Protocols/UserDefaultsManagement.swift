@@ -6,7 +6,7 @@
 //  Copyright © 2016 Massmaker. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol UserDefaultsManagement
 {
@@ -16,5 +16,7 @@ protocol UserDefaultsManagement
     func setPasswordToDefaults(password:String?)
     func setUserIDToDefaults(userId:String?)
     func getUserIdFromDefaults() -> String?
+    func getDiscountImageFromDocumentsForUserId(userId:String) -> UIImage?
+    func saveDiscountImageToDocuments(image:UIImage, forUserId:String)
     func syncronyzeDefaults()
 }

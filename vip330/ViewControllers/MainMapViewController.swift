@@ -26,6 +26,8 @@ class MainMapViewController: UIViewController {
         self.discountsManager.delegate = self
         self.discountsManager.mapView = self.mapView
         self.discountsManager.loadGeodatasFromServer()
+        
+        addShowDiscountImageButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,5 +48,15 @@ class MainMapViewController: UIViewController {
             self.locationManager.checkPermissions()
         }
     }
-
+    
+    func addShowDiscountImageButton()
+    {
+        let rightBarButton = UIBarButtonItem(title: "Discount", style: .Plain, target: self, action: "showDiscountView")
+        self.navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    func showDiscountView()
+    {
+        self.performSegueWithIdentifier(MapToDiscountImageSegue, sender: nil)
+    }
 }
