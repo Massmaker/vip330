@@ -30,7 +30,7 @@ class RegistrationFormViewController: FormViewController {
     
     func setupRegistrationButton()
     {
-        let regButton = UIBarButtonItem(title: "Register", style: .Plain, target: self, action: "registrationButtonAction:")
+        let regButton = UIBarButtonItem(title: "Zarejestruj się", style: .Plain, target: self, action: "registrationButtonAction:")
         regButton.enabled = false
         self.navigationItem.rightBarButtonItem = regButton
     }
@@ -39,47 +39,47 @@ class RegistrationFormViewController: FormViewController {
     {
         form
             +++
-            Section("Name and LastName")
+            Section("Nazwa")
             
             <<< NameRow(){
-                $0.title = "username"
-                $0.placeholder = "enter your username"
+                $0.title = "Nazwa użytkownika"
+                //$0.placeholder = "enter your username"
             }.onChange({ (nameRow) -> () in
                 self.preRegUserData.username = nameRow.value ?? ""
                 self.checkRegisterButtonEnabled()
             })
             
             +++
-            Section("Email")
+            Section("E-mail")
             
             <<< EmailRow(){
-                $0.title = "email"
-                $0.placeholder = "enter email"
+                    $0.title = "Adres e-mail"
+                    //$0.placeholder = "enter email"
                 }.onChange({ (eRow) -> () in
                 self.preRegUserData.email = eRow.value ?? ""
                 self.checkRegisterButtonEnabled()
             })
             
             <<< EmailRow(){
-                    $0.title = "confirm"
-                    $0.placeholder = "enter email"
+                    $0.title = "Powtórz adres e-mail"
+                    //$0.placeholder = "enter email"
                 }.onChange({ (eRow) -> () in
                     self.preRegUserData.confirmEmail = eRow.value ?? ""
                     self.checkRegisterButtonEnabled()
                 })
             
-            +++ Section("Password")
+            +++ Section("Hasło")
             
             <<< PasswordRow(){
-                    $0.title = "password"
-                    $0.placeholder = "enter pasword"
+                    $0.title = "Hasło"
+                    //$0.placeholder = "enter pasword"
                 }.onChange({ (pRow) -> () in
                     self.preRegUserData.password = pRow.value ?? ""
                     self.checkRegisterButtonEnabled()
                 })
             <<< PasswordRow(){
-                    $0.title = "confirm"
-                    $0.placeholder = "enter pasword"
+                    $0.title = "Powtórz hasło"
+                    //$0.placeholder = "enter pasword"
                 }.onChange({ (pRow) -> () in
                     self.preRegUserData.confirmPassword = pRow.value ?? ""
                     self.checkRegisterButtonEnabled()

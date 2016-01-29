@@ -31,14 +31,14 @@ class LoginFormViewController: FormViewController {
     private func setupTableView()
     {
         form +++ Section() <<< EmailRow(){
-            $0.title = "email"
+            $0.title = "Adres e-mail"
             $0.value = userEmail
         }.onChange({ (eRow) -> () in
             self.userEmail = eRow.value
             self.checkLoginButtonEnabled()
         })
             <<< PasswordRow(){
-                $0.title = "password"
+                $0.title = "Hasło"
                 $0.value = userPassword
         }.onChange({ (pRow) -> () in
             self.userPassword = pRow.value
@@ -75,7 +75,7 @@ class LoginFormViewController: FormViewController {
         
         guard let loginButton = self.navigationItem.rightBarButtonItem else
         {
-             self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Login", style: .Plain, target: self, action: "startLoginButtonAction:")
+             self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Zaloguj się", style: .Plain, target: self, action: "startLoginButtonAction:")
             return
         }
         loginButton.enabled = true

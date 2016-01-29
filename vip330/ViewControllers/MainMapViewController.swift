@@ -51,7 +51,7 @@ class MainMapViewController: UIViewController {
     
     func addShowDiscountImageButton()
     {
-        let rightBarButton = UIBarButtonItem(title: "Discount", style: .Plain, target: self, action: "showDiscountView")
+        let rightBarButton = UIBarButtonItem(title: "Karta VIP330", style: .Plain, target: self, action: "showDiscountView")
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
